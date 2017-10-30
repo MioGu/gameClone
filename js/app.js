@@ -54,18 +54,18 @@ Player.prototype.render = function() {
 
 Player.prototype.handleInput = function(direction) {
     switch (direction) {
-        case 'left': if( this.x - 100 >= 0 ) this.x-=100
+        case 'left': if( this.x - 100 >= 0 ) this.x-=100;
         break;
-        case 'right': if( this.x + 100 <= 400 ) this.x+=100
+        case 'right': if( this.x + 100 <= 400 ) this.x+=100;
         break;
         case 'up':  
             if( this.y - 80 >= 0 ) {
-                this.y-=80
+                this.y-=80;
             } else {
-                this.y = 300
-            }
+                this.y = 300;
+            };
         break;
-        case 'down': if( this.y + 80 <= 400 ) this.y+=80
+        case 'down': if( this.y + 80 <= 400 ) this.y+=80;
         break;
     }
 }
